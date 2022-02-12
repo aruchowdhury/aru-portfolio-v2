@@ -1,4 +1,5 @@
 This is a ongoing project, building the vertion 2 of my portfolio. Not ready yet.
+
 I have used Next.js, TailwindCSS so far and will update contineously. 
 
 ## Getting Started
