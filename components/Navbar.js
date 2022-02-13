@@ -50,12 +50,12 @@ const Navbar = () => {
             {showNav ? (
               <FaRegWindowClose
                 onClick={() => setShowNav(!showNav)}
-                className="md:hidden block w-10 h-10 p-2 cursor-pointer text-teal-500"
+                className="md:hidden block w-8 h-8 cursor-pointer text-teal-500"
               />
             ) : (
               <GiHamburgerMenu
                 onClick={() => setShowNav(!showNav)}
-                className="md:hidden block w-10 h-10 p-2 cursor-pointer text-teal-500"
+                className="md:hidden block w-8 h-8 cursor-pointer text-teal-500"
               />
             )}
           </div>
