@@ -40,11 +40,12 @@ const Navbar = () => {
               className={"cursor-pointer animation-hover hover:opacity-80"}
             >
               <Link href="/" passHref>
-                <div className="flex justify-center items-center">
-                  <h1 className=" font-bold text-3xl cursor-pointer text-teal-800">
-                    Dev<span className="text-teal-500">ARU</span>
-                  </h1>
-                </div>
+                <h1 className=" flex flex-row justify-center items-center font-bold text-3xl cursor-pointer text-teal-800">
+                  <span>Dev</span>
+                  <span className="text-teal-500 flex ">
+                    ARU<span className="text-2xl text-teal-800">.()</span>
+                  </span>
+                </h1>
               </Link>
             </LinkScroll>
             {showNav ? (

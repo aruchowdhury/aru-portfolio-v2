@@ -5,8 +5,13 @@ module.exports = {
   ],
   theme: {
     colors: {
-      white: "#FFFFFF",
-      black: "000000",
+      white: "#e6f1ff",
+      black: "#000000",
+      gray: {
+        100: "#ccd6f6",
+        200: "#a8b2d1",
+        300: "#8892b0",
+      },
       teal: {
         500: "#14B8A6",
         800: "#134E4A",
@@ -15,7 +20,7 @@ module.exports = {
         500: "#3B82F6",
         800: "#1E40AF",
       },
-      megenta: "#0a192f",
+      megenta: "#0C1B31",
       lightmegenta: "#222f43",
     },
     extend: {},
