@@ -22,6 +22,7 @@ module.exports = {
       },
       megenta: "#0C1B31",
       lightmegenta: "#222f43",
+      // navy
     },
     extend: {},
   },

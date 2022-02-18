@@ -51,29 +51,20 @@ export default function Contact() {
               />
             </div>
             <div className="block mb-6">
+              <label>Subject:</label>
+              <input
+                type="text"
+                name="subject"
+                className=" block w-full h-8 mt-2 border-none rounded-md shadow-md bg-lightmegenta focus:ring-2 focus:outline-none focus:border-teal-500 focus:ring-teal-500"
+              />
+            </div>
+            <div className="block mb-6">
               <label>Email address: </label>
               <input
                 name="email"
                 type="email"
                 className=" block w-full h-8 mt-2 border-none rounded-md shadow-md bg-lightmegenta focus:ring-2 focus:outline-none focus:border-teal-500 focus:ring-teal-500"
                 required
-              />
-            </div>
-            <div className="block mb-6">
-              <label>Contact no: </label>
-              <input
-                name="contactNo"
-                type="text"
-                className=" block w-full h-8 mt-2 border-none rounded-md shadow-md bg-lightmegenta focus:ring-2 focus:outline-none focus:border-teal-500 focus:ring-teal-500"
-                required
-              />
-            </div>
-            <div className="block mb-6">
-              <label>Subject:</label>
-              <input
-                type="text"
-                name="subject"
-                className=" block w-full h-8 mt-2 border-none rounded-md shadow-md bg-lightmegenta focus:ring-2 focus:outline-none focus:border-teal-500 focus:ring-teal-500"
               />
             </div>
             <div className="block mb-6">
