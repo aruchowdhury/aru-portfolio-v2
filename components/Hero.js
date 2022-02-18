@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <div
       className="max-w-screen-xl max-h-screen mt-8 mb-6 sm:mt-28 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
-      id="home"
+      id="hero"
     >
       {/* <div className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8  sm:py-16 "> */}
       <div className=" py-32 flex flex-col justify-center items-start row-start-2 sm:row-start-1">

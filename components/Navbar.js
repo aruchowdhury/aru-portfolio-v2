@@ -30,12 +30,12 @@ const Navbar = () => {
           <div className="flex justify-between items-center">
             <LinkScroll
               activeClass="active"
-              to="home"
+              to="hero"
               spy={true}
               smooth={true}
               duration={1000}
               onSetActive={() => {
-                setActiveLink("home");
+                setActiveLink("hero");
               }}
               className={"cursor-pointer animation-hover hover:opacity-80"}
             >
