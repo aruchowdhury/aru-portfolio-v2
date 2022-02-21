@@ -1,17 +1,13 @@
 import react, { useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import LinkScroll from "react-scroll/modules/components/Link";
 import StickyBox from "react-sticky-box";
-import About from "../components/About";
-import Contact from "../components/Contact";
-import Hero from "../components/Hero";
-import Projects from "../components/Projects";
-import Skills from "../components/Skills";
+import About from "../components/HomePage/About";
+import Contact from "../components/HomePage/Contact";
+import Projects from "../components/HomePage/Projects";
+import Skills from "../components/HomePage/Skills";
 import SocialSidebar from "../components/SocialSidebar";
 import Layout from "../components/Layout";
-import HomeParticle from "../components/HomeParticle";
+import HomeParticle from "../components/Particles/HomeParticle";
 
 export default function Home() {
   const [showLanding, setShowLanding] = useState(false);
@@ -45,7 +41,7 @@ export default function Home() {
             <Projects />
             <Contact />
           </div>
-          <div className="absolute top-20 bottom-20 right-0">
+          <div className=" absolute top-20 bottom-20 right-0">
             <StickyBox offsetTop={20} offsetBottom={20}>
               <SocialSidebar />
             </StickyBox>

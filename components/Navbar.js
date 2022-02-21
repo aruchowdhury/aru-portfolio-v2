@@ -83,7 +83,7 @@ const Navbar = () => {
               }
               onClick={() => setShowNav(!showNav)}
             >
-              <Link href="/" passHref>
+              <Link href="/home" passHref>
                 About
               </Link>
             </LinkScroll>
@@ -104,7 +104,7 @@ const Navbar = () => {
               }
               onClick={() => setShowNav(!showNav)}
             >
-              <Link href="/" passHref>
+              <Link href="/home" passHref>
                 Projects
               </Link>
             </LinkScroll>
@@ -126,7 +126,9 @@ const Navbar = () => {
               }
               onClick={() => setShowNav(!showNav)}
             >
-              Skills
+              <Link href="/home" passHref>
+                Skills
+              </Link>
             </LinkScroll>
             <LinkScroll
               activeClass="active"

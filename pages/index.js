@@ -1,17 +1,8 @@
 import react, { useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
-import LinkScroll from "react-scroll/modules/components/Link";
-import StickyBox from "react-sticky-box";
-import About from "../components/About";
-import Contact from "../components/Contact";
-import Hero from "../components/Hero";
-import Projects from "../components/Projects";
-import Skills from "../components/Skills";
-import SocialSidebar from "../components/SocialSidebar";
-import Layout from "../components/Layout";
-import Landingparticle from "../components/LandingParticle";
+
+import Landingparticle from "../components/Particles/LandingParticle";
 
 export default function Landing() {
   const [showLanding, setShowLanding] = useState(false);
@@ -42,39 +33,26 @@ export default function Landing() {
         id="home"
       >
         <div className=" py-32 flex flex-col justify-center items-center ">
-          <p className="text-teal-500 mt-4 mb-6">Hi,</p>
-          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-gray-200 leading-normal">
-            I am Aru.
+          <p className="text-teal-500 mt-8 mb-2 ">Hi, I am </p>
+          <h1 className=" text-2xl lg:text-3xl xl:text-4xl font-medium text-gray-200 leading-normal">
+            Arunava Chowdhury.
           </h1>
-          <p className="text-3xl lg:text-4xl xl:text-5xl text-gray-200 mt-4 mb-6">
-            Full Stack Developer.
+          <p className=" text-3xl lg:text-4xl xl:text-5xl text-gray-200 mt-4 mb-6">
+            A Full Stack Developer.
           </p>
-          <p className=" text-gray-300 mb-10">
-            I am experienced software developer, love to create interactive web
-            applications.
+          <p className=" text-gray-300 text-xl mb-10 text-center">
+            I am experienced full stack software developer, love to create
+            interactive web applications.
           </p>
 
-          <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            <LinkScroll
-              activeClass="active"
-              to="home"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("home");
-              }}
+          <Link href="/home" passHref>
+            <button
+              onClick={handleShow}
+              className=" mr-4 font-medium tracking-wide py-2 px-5 sm:px-8 md:px-10 lg:px-12 border-teal-500 text-teal-500  border-2 rounded capitalize hover:bg-teal-500 hover:text-white hover:border-teal-500 transition-all duration-500"
             >
-              <Link href="/home" passHref>
-                <button
-                  onClick={handleShow}
-                  className=" mr-4 font-medium tracking-wide py-2 px-5 sm:px-8 border-teal-500 text-teal-500  border-2 rounded capitalize hover:bg-teal-500 hover:text-white hover:border-teal-500 transition-all duration-500"
-                >
-                  Home
-                </button>
-              </Link>
-            </LinkScroll>
-          </div>
+              Home
+            </button>
+          </Link>
         </div>
       </div>
     </div>
