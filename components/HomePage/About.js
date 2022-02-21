@@ -56,17 +56,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="h-full w-full place-self-center">
-          <Image
-            className="object-center flex self-center justify-center"
-            src="/images/coding.svg"
-            alt="hero"
-            quality={100}
-            width={312}
-            height={203}
-            layout="responsive"
-          />
-        </div>
+        <div className="h-full w-full place-self-center"></div>
       </div>
     </div>
   );
