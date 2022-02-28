@@ -30,3 +30,30 @@ export const projects = [
     gifPause: "/images/ecomm2.png",
   },
 ];
+
+export const skills = [
+  {
+    title: "Frontend",
+    description:
+      "description is fullstack develoiper and secure desktop developer",
+    tools: ["React", "Node", "Express", "MongoDB", "Axios"],
+  },
+  {
+    title: "Backend",
+    description:
+      "description is fullstack develoiper and secure desktop developer",
+    tools: ["React", "Node", "Express", "MongoDB", "Axios"],
+  },
+  {
+    title: "Full-stack",
+    description:
+      "description is fullstack develoiper and secure desktop developer",
+    tools: ["React", "Node", "Express", "MongoDB", "Axios"],
+  },
+  {
+    title: "Agile Scrum",
+    description:
+      "description is fullstack develoiper and secure desktop developer",
+    tools: ["React", "Node", "Express", "MongoDB", "Axios"],
+  },
+];

@@ -1,25 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { FaLinkedin, FaGithubSquare, FaTwitterSquare } from "react-icons/fa";
 
 export default function SocialSidebar() {
+  const [hover, setHover] = useState(false);
+
+  const handleHover = () => {
+    setHover(!hover);
+  };
   return (
-    <div className="sm:m-2 xl:mx-20 xl:my-4 2xl:mx-80 2xl:-my-16 flex flex-col justify-center items-center h-screen">
-      <div className="my-2 text-teal-500 hover:text-teal-800 cursor-pointer ">
-        <Link href="https://github.com/aruchowdhury" passHref>
-          <FaGithubSquare size="30" />
-        </Link>
-      </div>
-      <div className="my-2 text-teal-500 hover:text-teal-800 cursor-pointer">
-        <Link href="https://www.linkedin.com/in/arunavachowdhury/" passHref>
-          <FaLinkedin size="30" />
-        </Link>
-      </div>
-      <div className="my-2 text-teal-500 hover:text-teal-800 cursor-pointer">
-        <Link href="https://twitter.com/aru_pavel" passHref>
-          <FaTwitterSquare size="30" />
-        </Link>
-      </div>
+    <div
+      onMouseEnter={handleHover}
+      onMouseLeave={handleHover}
+      className="mr-2 flex flex-col justify-center items-right h-screen transition-all duration-500"
+    >
+      {hover ? (
+        <>
+          <div className="my-2 px-3 py-1 rounded-2xl  bg-teal-500 hover:bg-teal-800 hover:text-gray-100 cursor-pointer transition-all duration-500">
+            <Link href="https://github.com/aruchowdhury" passHref>
+              <div className="flex flex-row justify-between items-center">
+                <div className="pr-2">Github </div>
+                <FaGithubSquare size="27" />
+              </div>
+            </Link>
+          </div>
+          <div className="my-2 px-3 py-1 rounded-2xl bg-teal-500 hover:bg-teal-800  hover:text-gray-100 cursor-pointer transition-all duration-500">
+            <Link href="https://www.linkedin.com/in/arunavachowdhury/" passHref>
+              <div className="flex flex-row justify-between items-center">
+                <div className="pr-2">LinkedIn </div>
+                <FaLinkedin size="27" />
+              </div>
+            </Link>
+          </div>
+          <div className="my-2 px-3 py-1 rounded-2xl  bg-teal-500 hover:bg-teal-800  hover:text-gray-100 cursor-pointer transition-all duration-500">
+            <Link href="https://twitter.com/aru_pavel" passHref>
+              <div className="flex flex-row justify-between items-center">
+                <div className="pr-2">Twitter </div>
+                <FaTwitterSquare size="27" />
+              </div>
+            </Link>
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="my-2 text-teal-500  cursor-pointer ">
+            <Link href="https://github.com/aruchowdhury" passHref>
+              <FaGithubSquare size="27" />
+            </Link>
+          </div>
+          <div className="my-2 text-teal-500  cursor-pointer">
+            <Link href="https://www.linkedin.com/in/arunavachowdhury/" passHref>
+              <FaLinkedin size="27" />
+            </Link>
+          </div>
+          <div className="my-2 text-teal-500  cursor-pointer">
+            <Link href="https://twitter.com/aru_pavel" passHref>
+              <FaTwitterSquare size="27" />
+            </Link>
+          </div>
+        </>
+      )}
     </div>
   );
 }

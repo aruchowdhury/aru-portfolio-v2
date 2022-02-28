@@ -20,9 +20,10 @@ module.exports = {
         500: "#3B82F6",
         800: "#1E40AF",
       },
-      megenta: "#0C1B31",
-      lightmegenta: "#222f43",
-      // navy
+      navyblue: {
+        300: "#0C1B31",
+        500: "#222f43",
+      },
     },
     extend: {},
   },

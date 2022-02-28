@@ -1,6 +1,5 @@
 import react, { useState } from "react";
 import Head from "next/head";
-import StickyBox from "react-sticky-box";
 import About from "../components/HomePage/About";
 import Contact from "../components/HomePage/Contact";
 import Projects from "../components/HomePage/Projects";
@@ -41,10 +40,8 @@ export default function Home() {
             <Projects />
             <Contact />
           </div>
-          <div className=" absolute top-20 bottom-20 right-0">
-            <StickyBox offsetTop={20} offsetBottom={20}>
-              <SocialSidebar />
-            </StickyBox>
+          <div className="fixed right-0">
+            <SocialSidebar />
           </div>
         </div>
       </Layout>

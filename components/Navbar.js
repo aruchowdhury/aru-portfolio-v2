@@ -22,7 +22,7 @@ const Navbar = () => {
     <>
       <header
         className={
-          "fixed top-0 w-full z-30 bg-megenta transition-all " +
+          "fixed top-0 w-full z-30 bg-navyblue-300 transition-all " +
           (scrollActive ? " shadow-md pt-0" : " pt-4")
         }
       >
@@ -63,7 +63,7 @@ const Navbar = () => {
           <div
             className={
               (showNav ? "left-0" : "-left-full") +
-              " flex flex-col md:flex-row items-center md:static fixed bottom-0 top-20 md:space-x-8 md:bg-transparent bg-megenta bg-opacity-90 md:w-auto w-full h-2/5 text-teal-500 md:text-teal-500 md:space-y-0 space-y-5 p-4 transition-left"
+              " flex flex-col md:flex-row items-center md:static fixed bottom-0 top-20 md:space-x-8 md:bg-transparent bg-navyblue-300 bg-opacity-90 md:w-auto w-full h-2/5 text-teal-500 md:text-teal-500 md:space-y-0 space-y-5 p-4 transition-left"
             }
           >
             <LinkScroll
@@ -76,7 +76,7 @@ const Navbar = () => {
                 setActiveLink("about");
               }}
               className={
-                "cursor-pointer" +
+                "cursor-pointer hidden" +
                 (activeLink === "about"
                   ? " text-teal-800"
                   : " hover:text-teal-800")

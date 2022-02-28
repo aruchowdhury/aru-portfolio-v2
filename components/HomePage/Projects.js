@@ -9,22 +9,22 @@ export default function Projects() {
 
   return (
     <div
-      className="max-w-screen-xl mt-40 mb-6 sm:px-8 lg:px-20 mx-auto"
+      className="max-w-screen-xl mt-40 mb-6 px-6 lg:px-16 mx-auto"
       id="projects"
     >
-      <SectionTitle text1="Projects" text2="My Projects.." />
+      <SectionTitle text1="My Projects..." />
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 mb-40">
         {projects.map((project, index) => (
           <div
             key={project.title}
-            className=" relative mt-2 h-max w-full p-4 border border-teal-500 rounded-md hover:bg-teal-800 flex flex-col items-center justify-between transition-all delay-200"
+            className=" relative mt-2 h-max w-full p-4  shadow-teal-500 shadow-md border border-teal-500 rounded-md hover:bg-teal-800 flex flex-col items-center justify-between transition-all delay-200"
             onMouseOut={() => setIsPlaying(null)}
             onBlur={() => setIsPlaying(null)}
             onMouseOver={() => setIsPlaying(index)}
             onFocus={() => setIsPlaying(index)}
           >
-            <div className="w-full mb-2 sm:mt-2 md:mt-0 rounded-sm flex items-center justify-center bg-teal-500 hover:bg-megenta sm:opacity-100 transition-all ease-in-out duration-300">
+            <div className="w-full mb-2 sm:mt-2 md:mt-0 rounded-sm flex items-center justify-center bg-teal-500 hover:bg-navyblue-300 sm:opacity-100 transition-all ease-in-out duration-300">
               <Image
                 className="w-full h-max mix-blend-multiply rounded-sm hover:mix-blend-normal"
                 src={isPlaying === index ? project.gif : project.gifPause}
@@ -40,27 +40,22 @@ export default function Projects() {
               </div>
               <div className=" mt-2 flex flex-wrap items-center">
                 {project.tools.map((tool) => (
-                  <p
-                    key={tool}
-                    className="mr-4 px-1 rounded-sm bg-teal-800 text-teal-500"
-                  >
+                  <p key={tool} className="mr-4 px-1 rounded-sm bg-teal-500">
                     {tool}
                   </p>
                 ))}
               </div>
               <div className=" mt-2 flex flex-wrap items-center">
-                <a
-                  className="mt-2 py-1 px-3 h-max mr-3 rounded-sm border-teal-500 text-teal-500 md:border-teal-500 md:text-teal-500 border-2 capitalize hover:bg-teal-500 hover:text-white hover:border-teal-500 flex items-center content-center cursor-pointer transition-all duration-200  hover:translate-x-1 hover:translate-y-1 "
-                  href={project.repo}
-                >
-                  <small>Repository </small>
-                </a>
-                <a
-                  className="mt-2 py-1 px-3 h-max mr-3 rounded-sm border-teal-500 text-teal-500 md:border-teal-500 md:text-teal-500 border-2 capitalize hover:bg-teal-500 hover:text-white hover:border-teal-500 flex items-center content-center cursor-pointer transition-all duration-200  hover:translate-x-1 hover:translate-y-1 "
-                  href={project.demo}
-                >
-                  <small>Website </small>
-                </a>
+                <Link href={project.repo} passHref>
+                  <div className="mt-2 py-1 px-3 h-max mr-3 rounded-sm border-teal-500 text-teal-500 md:border-teal-500 md:text-teal-500 border-2 capitalize hover:bg-teal-500 hover:text-white hover:border-teal-500 flex items-center content-center cursor-pointer transition-all duration-200  hover:translate-x-1 hover:translate-y-1 ">
+                    Github Repo
+                  </div>
+                </Link>
+                <Link href={project.demo} passHref>
+                  <div className="mt-2 py-1 px-3 h-max mr-3 rounded-sm border-teal-500 text-teal-500 md:border-teal-500 md:text-teal-500 border-2 capitalize hover:bg-teal-500 hover:text-white hover:border-teal-500 flex items-center content-center cursor-pointer transition-all duration-200  hover:translate-x-1 hover:translate-y-1 ">
+                    Demo
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
