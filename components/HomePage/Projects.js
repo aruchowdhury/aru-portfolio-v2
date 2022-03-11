@@ -30,7 +30,7 @@ export default function Projects() {
                 src={isPlaying === index ? project.gif : project.gifPause}
                 alt={project.title}
                 height={300}
-                width={508}
+                width={540}
               />
             </div>
             <div className="w-full ">
@@ -39,8 +39,11 @@ export default function Projects() {
                 <p className="mr-3 text-teal-500">{project.description}</p>
               </div>
               <div className=" mt-2 flex flex-wrap items-center">
-                {project.tools.map((tool) => (
-                  <p key={tool} className="mr-4 px-1 rounded-sm bg-teal-500">
+                {project.tools.map((tool, index) => (
+                  <p
+                    key={index}
+                    className="mr-4 my-2 px-1 rounded-sm bg-teal-500"
+                  >
                     {tool}
                   </p>
                 ))}

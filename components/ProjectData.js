@@ -15,7 +15,7 @@ export const projects = [
     tools: ["React", "Node", "Express", "MongoDB", "Axios"],
     repo: "https://github.com/aruchowdhury/yourLocal",
     demo: "https://www.youtube.com/watch?v=L3HJ9Wx25-E&t=6s",
-    gif: "/images/img10.png",
+    gif: "/images/img3.png",
     gifPause: "/images/img3.png",
   },
 
@@ -26,34 +26,48 @@ export const projects = [
     tools: ["React", "Node", "Express", "MongoDB"],
     repo: "https://github.com/aruchowdhury/group-project-ecomm",
     demo: "https://github.com/aruchowdhury/group-project-ecomm",
-    gif: "/images/img10.png",
+    gif: "/images/ecomm2.png",
     gifPause: "/images/ecomm2.png",
   },
 ];
 
 export const skills = [
   {
-    title: "Frontend",
-    description:
-      "description is fullstack develoiper and secure desktop developer",
-    tools: ["React", "Node", "Express", "MongoDB", "Axios"],
+    title: "FRONTEND DEVELOPMENT",
+    description: "",
+    tools: [
+      "React",
+      "Next.js",
+      "Apollo-GraphQL Client",
+      "TailwindCSS",
+      "Styled-Component",
+    ],
   },
   {
-    title: "Backend",
-    description:
-      "description is fullstack develoiper and secure desktop developer",
-    tools: ["React", "Node", "Express", "MongoDB", "Axios"],
+    title: "BACKEND DEVELOPMENT",
+    description: "",
+    tools: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Apollo-GraphQL Server",
+      "PostgreSQL",
+    ],
   },
   {
-    title: "Full-stack",
-    description:
-      "description is fullstack develoiper and secure desktop developer",
-    tools: ["React", "Node", "Express", "MongoDB", "Axios"],
+    title: "DEVOPS TOOLS",
+    description: "",
+    tools: [
+      "git",
+      "GitHub",
+      "Learning Docker",
+      "Learning Kubernetes",
+      "Learning CI/CD",
+    ],
   },
   {
-    title: "Agile Scrum",
-    description:
-      "description is fullstack develoiper and secure desktop developer",
-    tools: ["React", "Node", "Express", "MongoDB", "Axios"],
+    title: "DEVELOPMENT METHODOLOGY",
+    description: "",
+    tools: ["Agile", "Scrum", "Waterfall", "Jira", "Confluence"],
   },
 ];

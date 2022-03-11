@@ -52,7 +52,7 @@ export default function Contact() {
               <input
                 type="text"
                 name="name"
-                className=" block w-full h-10 mt-2 border-none rounded-md shadow-md bg-navyblue-500 focus:ring-2 focus:outline-none focus:border-teal-500 focus:ring-teal-500"
+                className=" block w-full h-10 mt-2 border-none rounded-md shadow-md text-gray-200 bg-navyblue-500 focus:ring-2 focus:outline-none focus:border-teal-500 focus:ring-teal-500"
               />
             </div>
             <div className="block mb-6">
@@ -60,7 +60,7 @@ export default function Contact() {
               <input
                 type="text"
                 name="subject"
-                className=" block w-full h-10 mt-2 border-none rounded-md shadow-md bg-navyblue-500 focus:ring-2 focus:outline-none focus:border-teal-500 focus:ring-teal-500"
+                className=" block w-full h-10 mt-2 border-none rounded-md shadow-md text-gray-200 bg-navyblue-500 focus:ring-2 focus:outline-none focus:border-teal-500 focus:ring-teal-500"
               />
             </div>
             <div className="block mb-6">
@@ -68,7 +68,7 @@ export default function Contact() {
               <input
                 name="email"
                 type="email"
-                className=" block w-full h-10 mt-2 border-none rounded-md shadow-md bg-navyblue-500 focus:ring-2 focus:outline-none focus:border-teal-500 focus:ring-teal-500"
+                className=" block w-full h-10 mt-2 border-none rounded-md shadow-md text-gray-200 bg-navyblue-500 focus:ring-2 focus:outline-none focus:border-teal-500 focus:ring-teal-500"
                 required
               />
             </div>
@@ -76,7 +76,7 @@ export default function Contact() {
               <label>Message:</label>
               <textarea
                 name="message"
-                className=" block w-full mt-2 resize-y border-none rounded-md shadow-md bg-navyblue-500 focus:ring-2 focus:outline-none focus:border-teal-500 focus:ring-teal-500"
+                className=" block w-full mt-2 resize-y border-none rounded-md shadow-md text-gray-200 bg-navyblue-500 focus:ring-2 focus:outline-none focus:border-teal-500 focus:ring-teal-500"
                 rows="4"
               />
             </div>
@@ -84,7 +84,7 @@ export default function Contact() {
               <input
                 type="submit"
                 value="Submit"
-                className="font-medium mt-8 tracking-wide py-2 px-5 sm:px-8 border-teal-500 text-navyblue-300 bg-teal-500 border-2 rounded capitalize hover:bg-teal-800 hover:text-white hover:border-teal-800 transition-all duration-500"
+                className="font-medium mt-8 tracking-wide py-2 px-5 sm:px-8 border-teal-500 text-white bg-teal-500 border-2 rounded capitalize hover:bg-teal-800 hover:border-teal-800 transition-all duration-500"
               />
             </div>
             <span className="mt-3 text-center text-teal-500 text-sm block">

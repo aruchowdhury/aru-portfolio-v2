@@ -9,13 +9,6 @@ import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 export default function Skills() {
   const settings = {
     dots: true,
-    customPaging: function (i) {
-      return (
-        <a className="">
-          <span className="mx-2 rounded-l-full rounded-r-full h-4 w-4 block cursor-pointer transition-all "></span>
-        </a>
-      );
-    },
     dotsClass: "slick-dots w-max absolute mt-20  ",
     infinite: true,
     speed: 500,
@@ -54,15 +47,26 @@ export default function Skills() {
         className="flex items-stretch justify-items-stretch"
       >
         {skills.map((skill, index) => (
-          <div className="px-3 flex items-stretch" key={index}>
-            <div className="mt-2 h-max w-full p-4 shadow-teal-500 shadow-md border border-teal-500 rounded-md hover:bg-teal-800 flex flex-col items-center justify-between transition-all delay-200">
-              <p className="text-teal-500">{skill.title}</p>
-              <p className="text-teal-500 self-center">{skill.description}</p>
-              {skill.tools.map((tool, index) => {
-                <p key={index} className="">
-                  {tool}
-                </p>;
-              })}
+          <div className="px-3 flex" key={index}>
+            <div className="mt-2 h-max w-full p-4 shadow-teal-500 shadow-md border border-teal-500 rounded-md hover:bg-teal-800 flex flex-col items-start justify-between transition-all delay-200">
+              <div className="m-4">
+                <p className="text-teal-500 font-extrabold text-lg mb-4">
+                  {skill.title}
+                </p>
+                <p className="text-teal-500 self-center text-md">
+                  {skill.description}
+                </p>
+                <div className=" mt-2 flex flex-col">
+                  {skill.tools.map((tool, index) => (
+                    <li
+                      key={index}
+                      className="rounded-sm list-disc text-teal-500"
+                    >
+                      {tool}
+                    </li>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         ))}
