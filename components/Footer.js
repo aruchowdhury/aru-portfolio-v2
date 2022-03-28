@@ -13,10 +13,10 @@ export default function Footer() {
       </div>
       <div className=" cursor-pointer text-center text-sm border-teal-500 px-3 py-1 shadow-md text-teal-500 rounded-full hover:bg-teal-500 border-2 hover:text-white">
         <Link href="https://github.com/aruchowdhury" passHref>
-          <span>
+          <a target="_blank">
             <ImGithub className="mr-2 hidden md:inline-block" />
             Source Code
-          </span>
+          </a>
         </Link>
       </div>
     </div>

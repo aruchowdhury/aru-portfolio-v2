@@ -153,12 +153,14 @@ const Navbar = () => {
               href="https://drive.google.com/file/d/1JOBu4N6C2L4sRc3A6uoeiGY2xKZskfhG/view?usp=sharing"
               passHref
             >
-              <button
-                className="font-medium tracking-wide py-2 px-5 sm:px-8 border-teal-500 text-teal-500 md:border-teal-500 md:text-teal-500 border-2 rounded capitalize hover:bg-teal-500 hover:text-white hover:border-teal-500 transition-all duration-500"
-                onClick={() => setShowNav(!showNav)}
-              >
-                Resume
-              </button>
+              <a target="_blank">
+                <button
+                  className="font-medium tracking-wide py-2 px-5 sm:px-8 border-teal-500 text-teal-500 md:border-teal-500 md:text-teal-500 border-2 rounded capitalize hover:bg-teal-500 hover:text-white hover:border-teal-500 transition-all duration-500"
+                  onClick={() => setShowNav(!showNav)}
+                >
+                  Resume
+                </button>
+              </a>
             </Link>
           </div>
         </nav>
