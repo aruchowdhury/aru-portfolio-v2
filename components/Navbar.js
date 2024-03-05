@@ -150,7 +150,7 @@ const Navbar = () => {
               Contact
             </LinkScroll>
             <Link
-              href="https://drive.google.com/file/d/1_h0BdnJ1QLDu2VGJ90-JpDf5JY90HaW0/view?usp=sharing"
+              href="https://docs.google.com/document/d/1vkBP21wrInZFTraoOIYLdvQL9y9irU9eR4HwX5IWbpc/edit?usp=sharing"
               passHref
             >
               <a target="_blank">
