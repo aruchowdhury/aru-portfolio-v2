@@ -14,17 +14,17 @@ export default function Home() {
   const handleShow = () => {
     setShowLanding(!showLanding);
   };
+
+  // initialized the tsParticles instance (main) here
   const particlesInit = (main) => {
     console.log(main);
-
-    // initialize the tsParticles instance (main) here, adding custom shapes or presets
   };
-
   const particlesLoaded = (container) => {
     console.log(container);
   };
+
   return (
-    <div>
+    <>
       <Head>
         <title>Home</title>
         <meta name="description" content="Home page of Aru's portfolio" />
@@ -45,6 +45,6 @@ export default function Home() {
           </div>
         </div>
       </Layout>
-    </div>
+    </>
   );
 }

@@ -11,23 +11,23 @@ export default function Landing() {
   const handleShow = () => {
     setShowLanding(!showLanding);
   };
+
+  // initialized the tsParticles instance (main)
   const particlesInit = (main) => {
     console.log(main);
-
-    // initialize the tsParticles instance (main) here, adding custom shapes or presets
   };
-
   const particlesLoaded = (container) => {
     console.log(container);
   };
 
   return (
-    <div>
+    <>
       <Head>
         <title>Home</title>
         <meta name="description" content="Home page of Aru's portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <Landingparticle init={particlesInit} loaded={particlesLoaded} />
       <div
         className="max-w-screen-xl max-h-screen mt-8 mb-6 sm:mt-28 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
@@ -64,6 +64,6 @@ export default function Landing() {
           </Slide>
         </div>
       </div>
-    </div>
+    </>
   );
 }

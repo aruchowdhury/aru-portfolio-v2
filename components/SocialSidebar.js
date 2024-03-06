@@ -16,7 +16,7 @@ export default function SocialSidebar() {
     >
       {hover ? (
         <>
-          <div className="md:my-2 md:px-3 md:py-1 md:rounded-2xl bg-teal-500 hover:bg-teal-800 hover:text-gray-100 cursor-pointer transition-all duration-500">
+          <div className="md:my-2 md:px-3 md:py-1 md:rounded-2xl lg:bg-teal-500 lg:hover:bg-teal-800 lg:hover:text-gray-100 cursor-pointer transition-all duration-500">
             <Link href="https://github.com/aruchowdhury" passHref>
               <a
                 target="_blank"
@@ -27,7 +27,7 @@ export default function SocialSidebar() {
               </a>
             </Link>
           </div>
-          <div className="md:my-2 md:px-3 md:py-1 md:rounded-2xl bg-teal-500 hover:bg-teal-800  hover:text-gray-100 cursor-pointer transition-all duration-500">
+          <div className="md:my-2 md:px-3 md:py-1 md:rounded-2xl lg:bg-teal-500 lg:hover:bg-teal-800  lg:hover:text-gray-100 cursor-pointer transition-all duration-500">
             <Link href="https://www.linkedin.com/in/arunavachowdhury/" passHref>
               <a
                 target="_blank"
@@ -38,7 +38,7 @@ export default function SocialSidebar() {
               </a>
             </Link>
           </div>
-          <div className="md:my-2 md:px-3 md:py-1 md:rounded-2xl bg-teal-500 hover:bg-teal-800  hover:text-gray-100 cursor-pointer transition-all duration-500">
+          <div className="md:my-2 md:px-3 md:py-1 md:rounded-2xl lg:bg-teal-500 lg:hover:bg-teal-800  lg:hover:text-gray-100 cursor-pointer transition-all duration-500">
             <Link href="https://twitter.com/aru_pavel" passHref>
               <a
                 target="_blank"
