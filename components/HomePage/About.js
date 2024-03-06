@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Link as LinkScroll } from "react-scroll";
 import { IoIosArrowForward, IoMdArrowForward } from "react-icons/io";
 import Slide from "react-reveal/Slide";
+import Typewriter from "typewriter-effect";
 
 export default function About() {
   const [hover, setHover] = useState(false);
@@ -19,11 +20,19 @@ export default function About() {
       <div className="mx-auto flex md:py-10 sm:py-6 flex-col-reverse md:flex-row items-center">
         <Slide left>
           <div className="lg:flex-grow md:w-full lg:pr-24 md:pr-16 text-gray-200 flex flex-col items-start md:text-left mb-16 md:mb-0 ">
-            <h1 className=" pt-6 md:pt-0 text-3xl lg:text-4xl xl:text-5xl font-medium text-teal-500 leading-normal">
-              Hi, I am Aru.
+            <h1 className=" pt-6 md:pt-0 text-3xl lg:text-5xl xl:text-6xl font-medium text-teal-500 leading-normal">
+              Hi, I am Aru<span className="text-gray-200 text-7xl">.</span>
             </h1>
-            <p className="text-xl mt-6">
-              A Full-Stack Developer based in Montreal, Canada.
+            <p className="text-2xl lg:text-3xl mt-2 mb-4 font-bold">
+              <Typewriter
+                options={{
+                  strings: [
+                    `A FULL STACK DEVELOPER <span className="text-teal-500 text-5xl">.</span>`,
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
             </p>
             <p className="text-xl mt-1">
               I’m always fascinated by responsive design, and creating
