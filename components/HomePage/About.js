@@ -54,7 +54,7 @@ export default function About() {
                 smooth={true}
                 duration={1000}
               >
-                <Link href="/home" passHref>
+                <Link href="/" passHref>
                   <button
                     onMouseEnter={handleHover}
                     onMouseLeave={handleHover}
