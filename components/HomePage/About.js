@@ -34,14 +34,18 @@ export default function About() {
                 }}
               />
             </p>
-            <p className="text-xl mt-1">
-              I’m always fascinated by responsive design, and creating
-              interactive frontend with a dynamic backend.
-            </p>
-            <p className="text-xl mb-10 mt-1">
-              When I’m away from my keyboard you would find me taking portraits
-              of friends and family. I also love travelling, and valuntering.
-            </p>
+            <div className="flex flex-col">
+              <p className="text-lg lg:text-xl mb-2">
+                I’m always fascinated by responsive design, and creating
+                interactive frontend with a dynamic backend.
+              </p>
+              <p className="text-lg lg:text-xl mb-6">
+                When I’m away from my keyboard you would find me taking
+                portraits of friends and family. I also love travelling, and
+                valuntering.
+              </p>
+            </div>
+
             <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
               <LinkScroll
                 activeClass="active"

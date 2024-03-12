@@ -18,7 +18,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             key={project.title}
-            className=" relative mt-2 h-max w-full p-4  shadow-teal-500 shadow-md border border-teal-500 rounded-md hover:bg-teal-800 flex flex-col items-center justify-between transition-all delay-200"
+            className=" relative mt-2 flex-grow p-4 shadow-teal-500 shadow-md border border-teal-500 rounded-md hover:bg-teal-800 flex flex-col items-center justify-between transition-all delay-200"
             onMouseOut={() => setIsPlaying(null)}
             onBlur={() => setIsPlaying(null)}
             onMouseOver={() => setIsPlaying(index)}
